@@ -1,1 +1,1 @@
-# DjangoWeek8
+# COMP698GIT
