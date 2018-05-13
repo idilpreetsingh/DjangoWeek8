@@ -1,4 +1,5 @@
 terraform {
+
   backend "gcs" {
     project = "comp698-ds1067"
     bucket  = "comp698-ds1067-terraform-state"
@@ -39,4 +40,14 @@ resource "google_compute_instance_group_manager" "terraform_group-manager" {
   base_instance_name = "terraform_group-manager"
   zone               = "us-central1-f"
   target_size        = "1"
+}
+
+ backend "gcs" {
+   project = "comp698-ds1067"
+   bucket  = "comp698-ds1067-terraform-state"
+   prefix  = "terraform-state"
+ }
+}
+provider "google" {
+  region = "us-central1"
 }
