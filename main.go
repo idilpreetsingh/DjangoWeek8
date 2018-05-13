@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-
 	"github.com/prometheus/client_golang/prometheus/promhttp"
+
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
