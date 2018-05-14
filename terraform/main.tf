@@ -37,3 +37,9 @@ base_instance_name = "instance-group-manager"
 zone               = "us-central1-f"
 target_size        = "1"
 }
+
+resource "google_storage_bucket" "image-store" {
+  project  = "comp698-ds1067"
+  name     = "my-bucket"
+  location = "us-central1"
+}
