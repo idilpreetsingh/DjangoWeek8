@@ -6,6 +6,7 @@ backend "gcs" {
  }
 }
 
+
 provider "google" {
   region = "us-central1"
 }
