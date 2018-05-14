@@ -12,7 +12,7 @@ provider "google" {
 
 //instances
 resource "google_compute_instance_template" "myserver"{
-  name         = "myserver-template"
+  name         = "myserver"
   project      = "comp698-ds1067"
   machine_type = "f1-micro"
 
@@ -36,7 +36,7 @@ resource "google_compute_instance_template" "myserver"{
 resource "google_compute_instance_group_manager" "myserver-manager" {
   name               = "myserver-manager"
   project            = "comp698-ds1067"
-  instance_template  = "${google_compute_instance_template.myserver-template.self_link}"
+  instance_template  = "${google_compute_instance_template.myserver.self_link}"
   base_instance_name = "myserver"
   zone               = "us-central1-f"
 
