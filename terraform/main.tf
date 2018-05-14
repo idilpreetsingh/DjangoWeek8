@@ -1,7 +1,9 @@
 terraform {
 backend "gcs" {
+
   project = "comp698-ds1067"
   bucket  = "comp698-ds1067-terraform-state"
+
   prefix  = "terraform-state"
  }
 }
@@ -15,9 +17,9 @@ provider "google" {
 //instances
 resource "google_compute_instance_template" "terraform-webserver"{
         name = "terraform-webserver"
+
         project     = "comp698-ds1067"
-        
-        
+      
 
         disk {
         source_image = "cos-cloud/cos-stable"
