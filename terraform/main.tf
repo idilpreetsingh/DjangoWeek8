@@ -35,7 +35,7 @@ resource "google_compute_instance_template" "myserver"{
     gce-container-declaration = <<EOF
 spec:
   containers:
-    - image: 'gcr.io/comp698-ds1067/github-idilpreetsingh-djangoweek8:62453c23c7c62eaa4533370063b818b24dae6a32'
+    - image: 'gcr.io/comp698-ds1067/github-idilpreetsingh-djangoweek8:708f9cf1897a7d0387b9eb99ec11cb15f2aae0aa'
       name: service-container
       stdin: false
       tty: false
