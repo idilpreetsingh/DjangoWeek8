@@ -6,6 +6,5 @@ cd $DIR
 git checkout master
 git pull
 git reset --hard HEAD
-
 terraform init
 terraform apply -auto-approve
