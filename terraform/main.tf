@@ -40,6 +40,6 @@ target_size        = "1"
 
 resource "google_storage_bucket" "image-store" {
   project  = "comp698-ds1067"
-  name     = "my-bucket"
+  name     = "ds1067bucket"
   location = "us-central1"
 }
